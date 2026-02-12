@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css" />
+  </head>
+  <body>
+    <div class="brand-title">
+      <ion-icon size="large" name="logo-octocat"></ion-icon>
+      <h1>Pet Haven & Care</h1>
+    </div>
+
+    <div class="login-container">
+      <div class="wrapper">
+        <form class="form-content" action="/" method="post">
+          <h1>Login</h1>
+          <p>stay updated in your life.</p>
+          <div class="login-content">
+            <input
+              type="username"
+              name="username"
+              id="username"
+              placeholder="Email & Phone"
+              required
+            />
+          </div>
+          <div class="login-content">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="forget">
+            <a href="#">forget password?</a>
+          </div>
+          <div class="sign-btn">
+            <button class="signBtn" type="submit">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="register-container">
+      <p>
+        don't have an account?
+        <a href="/register">Register Now</a>
+      </p>
+    </div>
+
+    <script src="../index.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

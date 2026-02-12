@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/petTable.css" />
+    <title>Pets List</title>
+  </head>
+  <body>
+    <div class="table-container">
+      <h1>Pets List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>PetID</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Breed</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Size</th>
+            <th>Color</th>
+            <th>Health Status</th>
+            <th>Arrival Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% pets.forEach(pet => { %>
+          <tr>
+            <td><%= pet.PetID %></td>
+            <td><%= pet.Name %></td>
+            <td><%= pet.Species %></td>
+            <td><%= pet.Breed %></td>
+            <td><%= pet.Age %></td>
+            <td><%= pet.Gender %></td>
+            <td><%= pet.Size %></td>
+            <td><%= pet.Color %></td>
+            <td><%= pet.HealthStatus %></td>
+            <td><%= pet.ArrivalDate %></td>
+            <td><%= pet.Status %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

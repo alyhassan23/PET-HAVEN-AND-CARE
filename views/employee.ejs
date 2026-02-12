@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link rel="stylesheet" href="/style/petTable.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <h1>Employees list</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>EmployeeID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Hire Date</th>
+            <th>Salary</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% Employees.forEach(Employee =>{ %>
+          <tr>
+            <td><%= Employee.EmployeeID %></td>
+            <td><%= Employee.FirstName %></td>
+            <td><%= Employee.LastName %></td>
+            <td><%= Employee.Position %></td>
+            <td><%= Employee.HireDate %></td>
+            <td><%= Employee.Salary %></td>
+            <td><%= Employee.PhoneNumber %></td>
+            <td><%= Employee.Email %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

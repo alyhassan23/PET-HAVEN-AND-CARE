@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../assets/jeshoots-com-_kRH3sx-__A-unsplash.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.brand-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 5vh;
+  gap: 20px;
+  font-family: "Playwrite NL", cursive;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.brand-title h1 {
+  font-size: 16px;
+}
+.login-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  position: relative;
+  height: 400px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 8px;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+}
+.form-content {
+  width: 70%;
+}
+.form-content h1,
+p {
+  margin-bottom: 6px;
+}
+
+.login-content {
+  margin-bottom: 10px;
+}
+input {
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 40px;
+  border: 1px solid slategrey;
+}
+.forget a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.forget a:hover {
+  text-decoration: underline;
+}
+.signBtn {
+  padding: 12px 40px;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 15px;
+  background-color: #3f434b;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.sign-btn {
+  text-align: center;
+}
+.signApple {
+  padding: 12px 40px;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 15px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.register-container {
+  text-align: center;
+  font-weight: 900;
+}
+.register-container a {
+  text-decoration: none;
+  color: #3f434b;
+}
+.register-container a:hover {
+  text-decoration: underline;
+}

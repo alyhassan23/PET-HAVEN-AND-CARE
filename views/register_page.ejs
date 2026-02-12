@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style/register.css" />
+  </head>
+  <body>
+    <div class="brand-title">
+      <ion-icon size="large" name="logo-octocat"></ion-icon>
+      <h1>Pet Haven & Care</h1>
+    </div>
+    <div class="container">
+      <div class="wrapper">
+        <h2>Registration</h2>
+        <form action="/register" method="post">
+          <div class="form-content">
+            <!-- <label for="name">Name:</label> -->
+            <input type="text" id="name" name="name" placeholder="Enter name" />
+          </div>
+          <div class="form-content">
+            <!-- <label for="email">Email:</label> -->
+            <input
+              type="username"
+              id="username"
+              name="username"
+              placeholder="username"
+            />
+          </div>
+          <div class="form-content">
+            <!-- <label for="password">Password:</label> -->
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-btn">
+            <button class="register-btn" type="submit">register</button>
+          </div>
+          <div class="register">
+            <p>Do you have an account? <a href="/">Login.</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../index.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

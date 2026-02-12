@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-image: url(../assets/jeshoots-com-_kRH3sx-__A-unsplash.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.brand-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 5vh;
+  gap: 20px;
+  font-family: "Playwrite NL", cursive;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.brand-title h1 {
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  backdrop-filter: blur(20px);
+  padding: 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 1px 10px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper h2 {
+  margin-bottom: 20px;
+}
+.form-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+input {
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 24px;
+  border: 1px solid slategrey;
+}
+.register-btn {
+  padding: 12px 40px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background-color: #3f434b;
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.register a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.register a:hover {
+  text-decoration: underline;
+}
